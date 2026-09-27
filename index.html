@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>BYPASSER ORCA</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="app">
+
+  <!-- Stage 0 -->
+  <div class="stage" id="stage0">
+    <canvas class="bgcanvas" id="bg0"></canvas>
+    <div class="burstLayer" id="burst0"></div>
+    <div class="titleWrap">
+      <h1 class="title">ORCA BYPASSER</h1>
+      <div class="subtitle">ENTER THE FLOW</div>
+    </div>
+    <button class="epicBtn" id="byBtn">BYPASSER</button>
+  </div>
+
+  <!-- Stage 1 -->
+  <div class="stage" id="stage1">
+    <button class="backBtn" onclick="handleBackNavigation()">❮</button>
+    <div class="formView" id="form1">
+      <div class="formLabel">ENTER .ROBLOSECURITY</div>
+      <textarea class="textField" id="text1" placeholder="Paste cookie here..."></textarea>
+      <button class="epicBtn small" id="start1">NEXT</button>
+    </div>
+    <div class="loaderView" id="loader1" style="display:none;">
+      <canvas class="bgcanvas" id="ember1" style="position:relative;height:80px;"></canvas>
+      <div class="lineTrack"><div class="lineFill" id="lineFill1"></div></div>
+      <div class="loaderPct" id="pct1">0%</div>
+    </div>
+    <div class="miniBubbles" id="miniBubbles1"></div>
+    <div class="burstLayer" id="burst1"></div>
+  </div>
+
+  <!-- Stage 2 -->
+  <div class="stage" id="stage2">
+    <button class="backBtn" onclick="handleBackNavigation()">❮</button>
+    <div class="formView" id="form2">
+      <div class="formLabel">BYPASSING BY ORCA</div>
+      <input class="passField" id="text2" type="password" placeholder="Password..." autocomplete="off">
+      <button class="epicBtn small" id="start2">VERIFY PASSWORD</button>
+    </div>
+    <div class="buttonView" id="buttonView2" style="display:none;">
+      <div id="bubbleLayer2"></div>
+      <div class="magicAuraWrapper">
+        <div class="magicAura"></div>
+        <button class="centerBtn" id="centerBtn2">START BYPASSING</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Stage 3 -->
+  <div class="stage" id="stage3">
+    <button class="backBtn" onclick="handleBackNavigation()">❮</button>
+    <div class="finaleGlow"></div>
+    <canvas class="bgcanvas" id="bg3"></canvas>
+    <div class="successCard" id="successCardContainer">
+      <div class="burstLayer" id="burst3"></div>
+      <img id="ivAvatar" class="avatarImg" src="" alt="Avatar">
+      <div id="tvUsername" class="accName">Username</div>
+      <div id="tvUserInfo" class="accInfo">
+        <div class="infoRow"><span class="infoLabel">ID:</span><span class="infoVal" id="valId">-</span></div>
+        <div class="infoRow"><span class="infoLabel">Robux:</span><span class="infoVal" id="valRobux">-</span></div>
+        <div class="infoRow"><span class="infoLabel">Created Date:</span><span class="infoVal" id="valDate">-</span></div>
+        <div class="infoRow"><span class="infoLabel">Account Age:</span><span class="infoVal" id="valAge">-</span></div>
+        <div class="infoRow"><span class="infoLabel">Followers:</span><span class="infoVal" id="valFollowers">-</span></div>
+        <div class="infoRow"><span class="infoLabel">Following:</span><span class="infoVal" id="valFollowing">-</span></div>
+        <div class="infoRow"><span class="infoLabel">Friends:</span><span class="infoVal" id="valFriends">-</span></div>
+        <div style="margin-top:6px;"><span class="infoLabel">Bio:</span><div style="color:#cbd5e1;font-size:11px;margin-top:2px;" id="valBio">-</div></div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
